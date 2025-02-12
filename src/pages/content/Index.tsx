@@ -1,4 +1,3 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Home from "../home/Home";
 import Projects from "../projects/Projects";
@@ -6,31 +5,32 @@ import Skills from "../skills/Skills";
 import AboutMe from "../aboutMe/AboutMe";
 
 const Index = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = (path: string) => {
-    navigate(path)
-  }
+  const handleNavigate = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Content>
       <Header>
         <Logo src="/src/assets/NL - Diseño Logo.png" alt="logo" />
         <List>
-          <ItemList onClick={() => handleNavigate('/home')}>Inicio</ItemList>
-          <ItemList onClick={() => handleNavigate('/projects')}>Proyectos</ItemList>
-          <ItemList onClick={() => handleNavigate('/skills')}>Habilidades</ItemList>
-          <ItemList onClick={() => handleNavigate('/aboutMe')}>Sobre mí</ItemList>
+          <ItemList onClick={() => handleNavigate("home")}>Inicio</ItemList>
+          <ItemList onClick={() => handleNavigate("projects")}>
+            Proyectos
+          </ItemList>
+          <ItemList onClick={() => handleNavigate("skills")}>
+            Habilidades
+          </ItemList>
+          <ItemList onClick={() => handleNavigate("aboutMe")}>
+            Sobre mí
+          </ItemList>
         </List>
       </Header>
       <MainContent>
-        <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/aboutMe" element={<AboutMe />} />
-        </Routes>
+        <Home />
+        <Projects />
+        <Skills />
+        <AboutMe />
       </MainContent>
     </Content>
   );
@@ -40,14 +40,18 @@ export default Index;
 
 const Content = styled.div`
   width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-background);
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary),
+    var(--color-accent)
+  );
   transition: grid-template-columns 0.3s ease-in-out;
 `;
 
 const Header = styled.header`
+  position: fixed;
   width: 100%;
   height: 70px;
   display: flex;
@@ -82,29 +86,16 @@ const ItemList = styled.li`
   transition: all 0.3s ease-in-out;
   &:hover {
     color: var(--color-secondary);
-    font-size:1.2rem
+    font-size: 1.2rem;
   }
 `;
 
 const MainContent = styled.main`
-  background-color: var(--color-secondary);
   width: 80%;
+  margin-top: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
-`;
-
-const Icon = styled.i`
-  color: var(--color-primary);
-  margin: 1rem 1.8rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    color: var(--color-text-secondary);
-  }
-  &:focus {
-    outline: none;
-  }
 `;
