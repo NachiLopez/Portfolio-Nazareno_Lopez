@@ -28,8 +28,11 @@ const Index = () => {
       </Header>
       <MainContent>
         <Home />
+        <div className="separator"></div>
         <Projects />
+        <div className="separator"></div>
         <Skills />
+        <div className="separator"></div>
         <AboutMe />
       </MainContent>
     </Content>
@@ -59,6 +62,7 @@ const Header = styled.header`
   display: inline-flex;
   justify-content: space-evenly;
   background-color: var(--color-primary);
+  z-index: 10;
 `;
 
 const Logo = styled.img`
@@ -92,10 +96,15 @@ const ItemList = styled.li`
 
 const MainContent = styled.main`
   width: 80%;
-  margin-top: 70px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
+  .separator {
+    width: 100%;
+    content: "";
+    border-top: 2px dotted var(--color-text);
+  }
 `;
