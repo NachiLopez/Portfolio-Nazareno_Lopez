@@ -322,7 +322,7 @@ const Projects = () => {
             <div className="client" style={{ justifyContent: "space-between" }}>
               <div style={{ display: "flex"}}>
                 <h4>Proyecto: </h4>
-                <p>Elogio Staff</p>
+                <p>Elogio Staff <span>(Feb. 2024 - Actualidad)</span></p>
               </div>
               <button className="deploy_button" onClick={() => window.open('https://github.com/NachiLopez')}>
                 {/* Cambiar el href a la pagina del deploy */}
@@ -336,9 +336,51 @@ const Projects = () => {
                 las siguientes:
               </p>
               <ul>
-                <li>React Js con TypeScript</li>
+                <li>React Js con TypeScript y Styled components</li>
                 <li>Node.js</li>
                 <li>SQL Migrado a Firebase</li>
+              </ul>
+            </div>
+          </ProjectDataContainer>
+        </CardContainer>
+        <CardContainer
+          expanded={expandedCard === 4}
+          hideText={hideText}
+          onClick={() => toggleCard(4)}
+        >
+          <img
+            className="client_pic"
+            src="/src/assets/crysisLogo.png"
+            alt="clientPic"
+          />
+          {expandedCard === 4 && hideText ? (
+            <div className="desc_work_detailed">
+              
+            </div>
+          ) : null}
+          <ProjectDataContainer
+            expanded={expandedCard === 4}
+            hideText={hideText}
+          >
+            <div className="client" style={{ justifyContent: "space-between" }}>
+              <div style={{ display: "flex"}}>
+                <h4>Proyecto: </h4>
+                <p>Crysis <span>(Feb. 2025 - Actualidad)</span></p>
+              </div>
+              <button className="deploy_button" onClick={() => window.open('https://crysis.vercel.app/')}>
+                <a href="https://crysis.vercel.app/" target="_blank" className="pi pi-globe"></a>
+                <p>Ver en vivo</p>
+              </button>
+            </div>
+            <div className="desc_work">
+              <p>
+                Las tecnologías utilizadas para desarrollar este proyecto fueron
+                las siguientes:
+              </p>
+              <ul>
+                <li>React Js con TypeScript y Styled components</li>
+                <li>Node.js</li>
+                <li>Firebase</li>
               </ul>
             </div>
           </ProjectDataContainer>
@@ -455,10 +497,23 @@ const CardContainer = styled.div.withConfig({
     transition: all 1s ease-in-out;
     overflow-y: scroll;
     overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--color-primary);
+    }
     opacity: ${(props) => (props.expanded && props.hideText ? "1" : "0")};
     height: ${(props) => (props.expanded ? "500px" : "0px")};
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       padding: 0;
     }
     span {
@@ -473,6 +528,9 @@ const ProjectDataContainer = styled.div.withConfig({
 })<CardProps>`
   padding: ${(props) => (props.expanded && props.hideText ? "0" : "0 1rem")};
   overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   .client {
     display: flex;
     align-items: center;

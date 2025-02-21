@@ -5,11 +5,11 @@
 }
 
 :root {
-  --color-primary: #8D6E63;  /* Marrón Principal */
-  --color-secondary: #D7CCC8; /* Beige Suave */
-  --color-dark: #5D4037;      /* Marrón Oscuro */
-  --color-background: #EFEBE9; /* Fondo Arena */
-  --color-accent: #A1887F;    /* Caramelo */
-  --color-text: #3E2723;      /* Chocolate */
-  --color-text-secondary: #ce8679;      /* Chocolate */
+  --color-primary: #8D6E63;
+  --color-secondary: #D7CCC8;
+  --color-dark: #5D4037;
+  --color-background: #EFEBE9;
+  --color-accent: #A1887F;
+  --color-text: #3E2723;
+  --color-text-secondary: #ce8679;
 }
