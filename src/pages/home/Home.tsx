@@ -20,7 +20,7 @@ const Home = () => {
                 </p>
                 <div className="limit"></div>
                 <div className="links_container desc_text">
-                    <button onClick={() => window.open('/CV-NazarenoLopez.pdf', '_blank')} className="text_format boton"><i className="pi pi-file-pdf"></i>Descargar CV</button>
+                    <button onClick={() => window.open('/CV_Nazareno_Lopez_Full_Stack_Developer.pdf', '_blank')} className="text_format boton"><i className="pi pi-file-pdf"></i>Descargar CV</button>
                     <p className="text_format"><i className="pi pi-envelope"></i>nazarenolopez35@gmail.com</p>
                     <a href="https://www.linkedin.com/in/nazareno-lopez-903a48211/" target="_blank" className="text_format pi pi-linkedin"></a>
                     <a href="https://github.com/NachiLopez" target="_blank" className="text_format pi pi-github"></a>

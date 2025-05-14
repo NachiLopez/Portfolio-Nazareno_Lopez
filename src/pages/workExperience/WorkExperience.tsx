@@ -489,7 +489,7 @@ const WorkExperience = () => {
               <ul>
                 <li>React Js con TypeScript y Styled components</li>
                 <li>Node.js</li>
-                <li>MongoDB</li>
+                <li>Firebase</li>
               </ul>
             </div>
           </ProjectDataContainer>
@@ -584,7 +584,7 @@ const WorkExperience = () => {
               </p>
               <ul>
                 <li>React Js</li>
-                <li>Firebase</li>
+                <li>MongoDB</li>
               </ul>
             </div>
           </ProjectDataContainer>
