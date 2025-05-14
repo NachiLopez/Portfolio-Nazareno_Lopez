@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <MainContainer id="home">
         <FirstSection>
-            <MeImage src="/public/nl-pic.jpg" />
+            <MeImage src="https://i.ibb.co/chX4QZqR/nl-pic.jpg" />
             <PresentationContainer>
                 <h1>Nazareno Lopez</h1>
                 <h2>Desarrollador Full Stack</h2>

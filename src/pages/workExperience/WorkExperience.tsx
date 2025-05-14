@@ -353,7 +353,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/public/ElogioStaff.png"
+            src="https://i.ibb.co/DDfMyxX2/Elogio-Staff.png"
             alt="clientPic"
           />
           {expandedCard === 3 && hideText ? (
@@ -441,7 +441,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/public/crysisLogo.png"
+            src="https://i.ibb.co/P3vfKKr/crysis-Logo.png"
             alt="clientPic"
           />
           {expandedCard === 4 && hideText ? (
@@ -501,7 +501,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/public/NewsHubLogo.png"
+            src="https://i.ibb.co/ynTw9Z4F/News-Hub-Logo.png"
             alt="clientPic"
           />
           {expandedCard === 5 && hideText ? (
@@ -549,7 +549,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/public/BlogPersonalLOGO.png"
+            src="https://i.ibb.co/G3d2Gdwx/Blog-Personal-LOGO.png"
             alt="clientPic"
           />
           {expandedCard === 6 && hideText ? (
