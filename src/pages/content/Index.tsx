@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <Content>
       <Header>
-        <Logo src="/src/assets/NL - Diseño Logo.png" alt="logo" />
+        <Logo src="/public/NL - Diseño Logo.png" alt="logo" />
         <List>
           <ItemList onClick={() => handleNavigate("home")}>Inicio</ItemList>
           <ItemList onClick={() => handleNavigate("jobexperience")}>

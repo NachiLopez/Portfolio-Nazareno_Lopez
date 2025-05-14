@@ -263,7 +263,7 @@ const WorkExperience = () => {
         >
           {/* <img
             className="client_pic"
-            src="/src/assets/forecastIa_captura.png"
+            src="/public/forecastIa_captura.png"
             alt="clientPic"
           /> */}
           <h2 className="client_pic no_pic">Forecast IA</h2>
@@ -353,7 +353,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/src/assets/ElogioStaff.png"
+            src="/public/ElogioStaff.png"
             alt="clientPic"
           />
           {expandedCard === 3 && hideText ? (
@@ -441,7 +441,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/src/assets/crysisLogo.png"
+            src="/public/crysisLogo.png"
             alt="clientPic"
           />
           {expandedCard === 4 && hideText ? (
@@ -501,7 +501,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/src/assets/NewsHubLogo.png"
+            src="/public/NewsHubLogo.png"
             alt="clientPic"
           />
           {expandedCard === 5 && hideText ? (
@@ -549,7 +549,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="/src/assets/BlogPersonalLOGO.png"
+            src="/public/BlogPersonalLOGO.png"
             alt="clientPic"
           />
           {expandedCard === 6 && hideText ? (
