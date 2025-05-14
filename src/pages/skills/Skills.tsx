@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaReact, FaNodeJs, FaDatabase, FaDocker } from "react-icons/fa";
-import { SiExpress, SiFirebase, SiMongodb, SiTypescript } from "react-icons/si";
+import { SiExpress, SiFirebase, SiMongodb, SiTypescript, SiNestjs } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -14,6 +14,10 @@ const Skills = () => {
         <Skill>
           <FaNodeJs />
           <span>Node.js</span>
+        </Skill>
+        <Skill>
+          <SiNestjs />
+          <span>Nest js</span>
         </Skill>
         <Skill>
           <SiExpress />

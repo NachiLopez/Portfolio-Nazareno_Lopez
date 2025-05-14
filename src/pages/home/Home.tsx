@@ -28,7 +28,7 @@ const Home = () => {
             </PresentationContainer>
         </FirstSection>
         <SecondSection>
-            <i className="pi pi-arrow-circle-down" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: "smooth" })}></i>
+            <i className="pi pi-arrow-circle-down" onClick={() => document.getElementById('jobexperience')?.scrollIntoView({ behavior: "smooth" })}></i>
         </SecondSection>
     </MainContainer>
   )

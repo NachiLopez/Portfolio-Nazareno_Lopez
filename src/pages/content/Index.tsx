@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Home from "../home/Home";
-import Projects from "../projects/Projects";
+import WorkExperience from "../workExperience/WorkExperience";
 import Skills from "../skills/Skills";
 import AboutMe from "../aboutMe/AboutMe";
 
@@ -15,8 +15,8 @@ const Index = () => {
         <Logo src="/src/assets/NL - Diseño Logo.png" alt="logo" />
         <List>
           <ItemList onClick={() => handleNavigate("home")}>Inicio</ItemList>
-          <ItemList onClick={() => handleNavigate("projects")}>
-            Proyectos
+          <ItemList onClick={() => handleNavigate("jobexperience")}>
+            Experiencia laboral
           </ItemList>
           <ItemList onClick={() => handleNavigate("skills")}>
             Habilidades
@@ -29,7 +29,7 @@ const Index = () => {
       <MainContent>
         <Home />
         <div className="separator"></div>
-        <Projects />
+        <WorkExperience />
         <div className="separator"></div>
         <Skills />
         <div className="separator"></div>
