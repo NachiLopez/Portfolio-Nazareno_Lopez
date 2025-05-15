@@ -88,10 +88,7 @@ const WorkExperience = () => {
               </p>
               <p>
                 <span>Integración y mantenimiento del servidor: </span>
-                Traducción de las necesidades discutidas en reuniones a
-                soluciones concretas en código. Configuración y despliegue de
-                servicios en el servidor, asegurando su correcto funcionamiento
-                y rendimiento.
+                Despliegue y configuración de servicios en un entorno Linux utilizando Docker y Docker Compose para la orquestación de contenedores. Implementación de entornos aislados para frontend, backend y base de datos, garantizando escalabilidad y fácil mantenimiento. Monitoreo y actualización de servicios para asegurar alta disponibilidad y rendimiento óptimo.
               </p>
             </div>
           ) : null}
@@ -220,7 +217,7 @@ const WorkExperience = () => {
               </p>
               <p>
                 <span>
-                  Desarrollo de funcionalidades avanzadas en la interfaz:{" "}
+                  Desarrollo de funcionalidades avanzadas en la interfaz:
                 </span>
                 De igual forma que con Meridional, se realizaron las mismas
                 tareas.
@@ -231,8 +228,7 @@ const WorkExperience = () => {
                 tareas.
               </p>
               <p>
-                <span>Integración y mantenimiento del servidor: </span>De igual
-                forma que con Meridional, se realizaron las mismas tareas.
+                <span>Integración y mantenimiento del servidor: </span>Despliegue y configuración de servicios en una máquina virtual remota, utilizando Internet Information Services (IIS) para la gestión del frontend y PM2 para la ejecución y monitoreo del backend en Node.js. Administración remota del entorno, asegurando disponibilidad, rendimiento óptimo y fácil recuperación ante fallos.
               </p>
             </div>
           ) : null}
