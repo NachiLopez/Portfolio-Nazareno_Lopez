@@ -1,6 +1,9 @@
 import styled from "styled-components";
-import { FaReact, FaNodeJs, FaDatabase, FaDocker } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaJava } from "react-icons/fa";
 import { SiExpress, SiFirebase, SiMongodb, SiTypescript, SiNestjs } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+
+
 
 const Skills = () => {
   return (
@@ -42,6 +45,14 @@ const Skills = () => {
         <Skill>
           <FaDocker />
           <span>Docker</span>
+        </Skill>
+        <Skill>
+          <GrMysql />
+          <span>MySQL</span>
+        </Skill>
+        <Skill>
+          <FaJava />
+          <span>Java</span>
         </Skill>
       </IconsContainer>
     </SkillsContainer>

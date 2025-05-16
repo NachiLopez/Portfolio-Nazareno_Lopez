@@ -10,10 +10,7 @@ const Home = () => {
                 <h2>Desarrollador Full Stack</h2>
                 <div className="limit"></div>
                 <p className="desc_text">
-                    Me dedico al desarrollo de software, enfocándome en React con TypeScript, Node.js y SQL Server. 
-                    Me gusta construir aplicaciones que realmente faciliten las tareas de quienes las 
-                    usan. Disfruto resolver problemas complejos y encontrar soluciones eficientes, 
-                    algo que enfrento a diario en mi trabajo.
+                    Me dedico al desarrollo de software, enfocándome en React con TypeScript, Node.js y SQL Server, aunque me mantengo abierto a aprender nuevas tecnologías, disfrutando el aprendizaje constante y la adaptación a nuevos desafíos cuando así se requiere. Me gusta construir aplicaciones que realmente faciliten las tareas de quienes las usan. Valoro la capacidad para detectar problemas de forma ágil y encontrar soluciones fundamentadas, priorizando el entendimiento claro del porqué de cada decisión, algo que enfrento a diario en mi trabajo.
                 </p>
                 <p className="desc_text">
                     Bienvenido a mi espacio, donde podes conocer más sobre mí y lo que hago.
@@ -45,8 +42,9 @@ const FirstSection = styled.section`
     display: grid;
     grid-template-columns: 35% 65%;
     gap: 3rem;
-    margin: 5rem 0;
+    margin: 2rem 0;
     padding: 2rem;
+    align-items: center;
 `;
 
 const MeImage = styled.img`
