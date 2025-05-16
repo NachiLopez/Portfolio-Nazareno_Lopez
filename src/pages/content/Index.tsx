@@ -12,9 +12,9 @@ const Index = () => {
   return (
     <Content>
       <Header>
-        <Logo src="https://i.ibb.co/jkRNRj8V/NL-Disen-o-Logo.png" alt="logo" onClick={() => handleNavigate("home")} />
+        <Logo src="https://i.ibb.co/jkRNRj8V/NL-Disen-o-Logo.png" alt="logo" onClick={() => handleNavigate("top")} />
         <List>
-          <ItemList onClick={() => handleNavigate("home")}>Inicio</ItemList>
+          <ItemList onClick={() => handleNavigate("top")}>Inicio</ItemList>
           <ItemList onClick={() => handleNavigate("jobexperience")}>
             Experiencia laboral
           </ItemList>
@@ -26,7 +26,7 @@ const Index = () => {
           </ItemList>
         </List>
       </Header>
-      <MainContent>
+      <MainContent id='top'>
         <Home />
         <div className="separator"></div>
         <WorkExperience />
