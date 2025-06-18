@@ -52,6 +52,8 @@ const WorkExperience = () => {
             <a>React con TypeScript, Styled Components, Node.JS, NestJS y SQL Server</a>
           </div>
         </JobContainer>
+
+        {/* CLOSE UP */}
         <CardContainer
           expanded={expandedCard === 0}
           hideText={hideText}
@@ -110,6 +112,8 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* MERIDIONAL */}
         <CardContainer
           expanded={expandedCard === 1}
           hideText={hideText}
@@ -179,6 +183,8 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* QUALIA */}
         <CardContainer
           expanded={expandedCard === 2}
           hideText={hideText}
@@ -252,18 +258,15 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* FORECAST IA */}
         <CardContainer
-          expanded={expandedCard === 5}
+          expanded={expandedCard === 3}
           hideText={hideText}
-          onClick={() => toggleCard(5)}
+          onClick={() => toggleCard(3)}
         >
-          {/* <img
-            className="client_pic"
-            src="/public/forecastIa_captura.png"
-            alt="clientPic"
-          /> */}
           <h2 className="client_pic no_pic">Forecast IA</h2>
-          {expandedCard === 5 && hideText ? (
+          {expandedCard === 3 && hideText ? (
             <div className="desc_work_detailed">
               <p>
                 <span>Desarrollo de la interfaz para visualizar predicciones: </span> 
@@ -300,7 +303,7 @@ const WorkExperience = () => {
             </div>
           ) : null}
           <ProjectDataContainer
-            expanded={expandedCard === 5}
+            expanded={expandedCard === 3}
             hideText={hideText}
           >
             <div className="client">
@@ -318,6 +321,111 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* ORTOPEDIA EL ARCANGEL */}
+        <div className="separator"></div>
+        <JobContainer>
+        <div className="multi_text">
+            <h3>Período: </h3>
+            <a>Junio 2025 - Actualidad</a>
+          </div>
+          <div className="multi_text">
+            <h3>Empresa: </h3>
+            <a
+              href="https://www.instagram.com/ortopedia_elarcangel/?hl=es-la"
+              target="_blank"
+            >
+              El Arcángel - Ortopedia
+            </a>
+          </div>
+          <div className="multi_text">
+            <h3>Rol: </h3>
+            <a>Full Stack Developer - Freelance</a>
+          </div>
+          <div className="multi_text">
+            <h3>Tecnologías: </h3>
+            <a>React con TypeScript, Styled Components, Node.JS y MySQL</a>
+          </div>
+        </JobContainer>
+
+        {/* ORTOPEDIA ARCANGEL */}
+        <CardContainer
+          expanded={expandedCard === 4}
+          hideText={hideText}
+          onClick={() => toggleCard(4)}
+        >
+          <img
+            className="client_pic"
+            src="https://i.ibb.co/4w2gcdjq/LOGO-ARCANGEL-FONDO-BLANCO.png"
+            alt="clientPic"
+          />
+          {expandedCard === 4 && hideText ? (
+            <div className="desc_work_detailed">
+              <p>
+                <span>Configuración del entorno y autenticación:</span> 
+                Implementación de un sistema de login seguro, gestión de usuarios y configuración inicial del servidor de producción, asegurando un entorno estable para el despliegue del sistema.
+              </p>
+              <p>
+                <span>Gestión de proveedores:</span> 
+                Desarrollo de un módulo completo para el alta, edición y baja de proveedores, incluyendo condiciones comerciales y vinculación con órdenes de compra.
+              </p>
+              <p>
+                <span>Módulo de compras:</span> 
+                Creación de un sistema para registrar órdenes de compra, su recepción parcial o total, y control de estados (pendiente, entregado, anulado, etc.), asociando cada compra a su proveedor correspondiente.
+              </p>
+              <p>
+                <span>Administración de productos:</span> 
+                Implementación de ABM de productos con atributos como código interno, nombre, marca, categoría, precio, costo y asociación a proveedores, incluyendo lógica de stock mínimo y trazabilidad.
+              </p>
+              <p>
+                <span>Gestión de stock y depósitos:</span> 
+                Control de inventario distribuido por depósitos o sucursales, con posibilidad de transferencias internas y alertas de stock bajo para una mejor planificación de reposición.
+              </p>
+              <p>
+                <span>Módulo de ventas y facturación:</span> 
+                Registro de ventas, asociación con clientes, generación de comprobantes, control de condiciones de pago y clasificación por obra social o tipo de venta.
+              </p>
+              <p>
+                <span>Reportes y dashboard:</span> 
+                Generación de informes visuales y listados exportables para analizar ventas, compras, stock y evolución de precios. Panel de métricas clave para toma de decisiones.
+              </p>
+              <p>
+                <span>Estructura del sistema y escalabilidad:</span> 
+                Arquitectura modular preparada para incorporar futuros módulos como pacientes, obras sociales o stock por lote, permitiendo escalabilidad a medida del negocio.
+              </p>
+              <p>
+                <span>Despliegue por sprints y feedback ágil:</span> 
+                Implementación ágil con entregas parciales en cada sprint. Despliegue continuo en entorno real para revisión del cliente y ajustes en base a su feedback directo.
+              </p>
+              <p>
+                <span>Utilización de Git y gestión de tareas:</span> 
+                Uso de Git con ramas específicas por task para facilitar el desarrollo aislado y revisión de código mediante pull requests hacia la rama de desarrollo. Control de tareas y planificación a través de Trello y documentación detallada en GitLab (tablero propio para seguimiento del desarrollo). La integración final se hacía en la rama main para presentar el sprint completo.
+              </p>
+            </div>
+          ) : null}
+          <ProjectDataContainer
+            expanded={expandedCard === 4}
+            hideText={hideText}
+          >
+            <div className="client">
+              <h4>Cliente: </h4>
+              <p>El Arcángel</p>
+            </div>
+            <div className="desc_work">
+              <p>
+                Las tecnologías utilizadas para desarrollar este proyecto fueron
+                las siguientes:
+              </p>
+              <ul>
+                <li>React Js con TypeScript y Styled components</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </ProjectDataContainer>
+        </CardContainer>
+
+        {/* FIVER FREE LANCE  */}
         <div className="separator"></div>
         <JobContainer>
           <div className="multi_text">
@@ -342,17 +450,19 @@ const WorkExperience = () => {
             <a>React con TypeScript, Styled Components, Node.JS, Firebase y MongoDB</a>
           </div>
         </JobContainer>
+
+        {/* Elogio Staff */}
         <CardContainer
-          expanded={expandedCard === 3}
+          expanded={expandedCard === 5}
           hideText={hideText}
-          onClick={() => toggleCard(3)}
+          onClick={() => toggleCard(5)}
         >
           <img
             className="client_pic"
             src="https://i.ibb.co/DDfMyxX2/Elogio-Staff.png"
             alt="clientPic"
           />
-          {expandedCard === 3 && hideText ? (
+          {expandedCard === 5 && hideText ? (
             <div className="desc_work_detailed">
               <p>
                 <span>Generación de flyers personalizados: </span>Desarrollo de
@@ -409,7 +519,7 @@ const WorkExperience = () => {
             </div>
           ) : null}
           <ProjectDataContainer
-            expanded={expandedCard === 3}
+            expanded={expandedCard === 5}
             hideText={hideText}
           >
             <div className="client">
@@ -430,17 +540,19 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* Crysis */}
         <CardContainer
-          expanded={expandedCard === 4}
+          expanded={expandedCard === 6}
           hideText={hideText}
-          onClick={() => toggleCard(4)}
+          onClick={() => toggleCard(6)}
         >
           <img
             className="client_pic"
             src="https://i.ibb.co/P3vfKKr/crysis-Logo.png"
             alt="clientPic"
           />
-          {expandedCard === 4 && hideText ? (
+          {expandedCard === 6 && hideText ? (
             <div className="desc_work_detailed">
               <p>
                 <span>Gestión de Productos: </span>Implementación de un catálogo de productos con React, TypeScript y Styled Components. Los datos se almacenan y traen con Firebase, con la posibilidad de filtrar por color, marca, categoría y precio, mejorando la experiencia de búsqueda.
@@ -469,7 +581,7 @@ const WorkExperience = () => {
             </div>
           ) : null}
           <ProjectDataContainer
-            expanded={expandedCard === 4}
+            expanded={expandedCard === 6}
             hideText={hideText}
           >
             <div className="client">
@@ -490,17 +602,19 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* NEWS HUB */}
         <CardContainer
-          expanded={expandedCard === 5}
+          expanded={expandedCard === 7}
           hideText={hideText}
-          onClick={() => toggleCard(5)}
+          onClick={() => toggleCard(7)}
         >
           <img
             className="client_pic"
             src="https://i.ibb.co/ynTw9Z4F/News-Hub-Logo.png"
             alt="clientPic"
           />
-          {expandedCard === 5 && hideText ? (
+          {expandedCard === 7 && hideText ? (
             <div className="desc_work_detailed">
               <p>
                 <span>Sistema de administración para redactores: </span>Creación de un panel donde los redactores pueden agregar, modificar y eliminar noticias. Las noticias se guardan en MongoDB, pasando por el back hecho en Node.js, y se visualizan en tiempo real.
@@ -517,7 +631,7 @@ const WorkExperience = () => {
             </div>
           ) : null}
           <ProjectDataContainer
-            expanded={expandedCard === 5}
+            expanded={expandedCard === 7}
             hideText={hideText}
           >
             <div className="client">
@@ -538,17 +652,19 @@ const WorkExperience = () => {
             </div>
           </ProjectDataContainer>
         </CardContainer>
+
+        {/* BLOG PERSONAL */}
         <CardContainer
-          expanded={expandedCard === 6}
+          expanded={expandedCard === 8}
           hideText={hideText}
-          onClick={() => toggleCard(6)}
+          onClick={() => toggleCard(8)}
         >
           <img
             className="client_pic"
             src="https://i.ibb.co/G3d2Gdwx/Blog-Personal-LOGO.png"
             alt="clientPic"
           />
-          {expandedCard === 6 && hideText ? (
+          {expandedCard === 8 && hideText ? (
             <div className="desc_work_detailed">
               <p>
                 <span>Autenticación de usuarios: </span>Desarrollo de un sistema de autenticación en Firebase Authentication para permitir que el administrador pueda iniciar sesión de forma segura y acceder al panel de control del blog.
@@ -565,7 +681,7 @@ const WorkExperience = () => {
             </div>
           ) : null}
           <ProjectDataContainer
-            expanded={expandedCard === 6}
+            expanded={expandedCard === 8}
             hideText={hideText}
           >
             <div className="client">
