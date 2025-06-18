@@ -356,7 +356,7 @@ const WorkExperience = () => {
         >
           <img
             className="client_pic"
-            src="https://i.ibb.co/4w2gcdjq/LOGO-ARCANGEL-FONDO-BLANCO.png"
+            src="https://i.ibb.co/nNYGsg8Z/LOGO-TRANSP-ARCANGEL-FONDO-BLANCO-Photoroom.png"
             alt="clientPic"
           />
           {expandedCard === 4 && hideText ? (
@@ -412,14 +412,17 @@ const WorkExperience = () => {
               <p>El Arcángel</p>
             </div>
             <div className="desc_work">
-              <p>
-                Las tecnologías utilizadas para desarrollar este proyecto fueron
-                las siguientes:
-              </p>
               <ul>
-                <li>React Js con TypeScript y Styled components</li>
-                <li>Node.js</li>
-                <li>MySQL</li>
+                <li>Configuración del entorno y autenticación</li>
+                <li>Gestión de proveedores</li>
+                <li>Módulo de compras</li>
+                <li>Administración de productos</li>
+                <li>Gestión de stock y depósitos</li>
+                <li>Módulo de ventas y facturación</li>
+                <li>Reportes y dashboard</li>
+                <li>Estructura del sistema y escalabilidad</li>
+                <li>Despliegue por sprints y feedback ágil</li>
+                <li>Utilización de Git y gestión de tareas</li>
               </ul>
             </div>
           </ProjectDataContainer>
@@ -879,40 +882,17 @@ const ProjectDataContainer = styled.div.withConfig({
       transition: all 0.3s ease-in-out;
       padding: 5px 0;
     }
-      @keyframes colorChange {
-        0% { color: var(--color-text); }  
-        50% { color: var(--color-accent); } 
-        100% { color: var(--color-text); }  
-      }
-      .deploy_button{
-        display: flex;
-        align-items: center;
-        background-color: var(--color-background);
-        font-size: 16px;
-        padding: 0 5px;
-        margin: 0;
-        transition: all 0.3s ease-in-out;
-        opacity: ${(props) => (props.expanded ? "0" : "1")};
-        p, a{
-          animation: colorChange 3s infinite alternate;
-          &:focus{
-            outline: none;
-          }
-        }
-        &:hover{
-          border-color: var(--color-accent);
-          box-shadow: 0 4px 6px #efebe963, 1px 1px 3px #efebe99e;
-        }
-        &:focus{
-          outline: none;
-        }
-      }
   }
+  width:100%;
   .desc_work {
     display: flex;
     flex-direction: column;
     text-align: start;
     padding: 10px 0;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;   /* Recomendado: estándar moderno */
+    white-space: normal;
     ul {
       margin: 0;
     }
@@ -921,12 +901,29 @@ const ProjectDataContainer = styled.div.withConfig({
       margin: 0;
       padding-bottom: 15px;
     }
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--color-primary);
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
   }
   .client,
   .desc_work {
     transition: opacity 0.3s ease-in-out;
     display: ${(props) => (props.expanded && props.hideText ? "none" : "flex")};
     opacity: ${(props) => (props.expanded ? "0" : "1")};
-    width: ${(props) => (props.expanded && props.hideText ? "0px" : "1000px")};
+    width: ${(props) => (props.expanded && props.hideText ? "0px" : "100%")};
+    word-wrap: break-word;
   }
 `;
